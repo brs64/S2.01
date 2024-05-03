@@ -1,3 +1,5 @@
-# Présentation des caractéristiques de la version v1 de l’application de lecteur de diaporama
+# S2.01 - Développement d'une application - Lecteur de diaporama
+# Groupe Arthur BAROS, Ugo BERGOS et Guillem JEANNIN
 
-Cette première version du projet est un projet non graphique, utilisé sur la fenêtre de commande. Nous avons implémenté toutes les classes figurants sur le diagramme de classe UML que nous avons élaboré. De plus cette version ne propose pas de mode de lecture automatique, le seul mode proposé est le mode manuel, c’est-à-dire que l’utilisateur doit lui-même passer à « l’image » suivante. Enfin e fichier main.cpp permet de tester le travail réalisé : il crée les principaux objets, affiche leur contenu, saisit les demandes de l’utilisateur, et active les méthodes des objets en fonction des demandes de l’utilisateur.
+Le dépôt du code des différentes version de l'application de Lecteur de diaporama pour la SAÉ 2.01 dans le cadre des enseignements en BUT1 Informatique. C'est une application permettant d’afficher des images sous la forme d’un diaporama. Un diaporama étant défini comme un regroupement d’images possédant un titre. Par exemple : « mes vacances 2021 ».
+Le lecteur affiche les images du diaporama en cours. Chaque image est affichée accompagnée de son intitulé / titre, de la catégorie à laquelle elle appartient, et de son rang au sein du diaporama.
