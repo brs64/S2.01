@@ -1,3 +1,3 @@
-**Présentation des caractéristiques de la version v1 de l’application**
+# Présentation des caractéristiques de la version v1 de l’application
 
 Cette première version du projet est un projet non graphique, utilisé sur la fenêtre de commande. Nous avons implémenté toutes les classes figurants sur le diagramme de classe UML que nous avons élaboré. De plus cette version ne propose pas de mode de lecture automatique, le seul mode proposé est le mode manuel, c’est-à-dire que l’utilisateur doit lui-même passer à « l’image » suivante. Enfin e fichier main.cpp permet de tester le travail réalisé : il crée les principaux objets, affiche leur contenu, saisit les demandes de l’utilisateur, et active les méthodes des objets en fonction des demandes de l’utilisateur.
