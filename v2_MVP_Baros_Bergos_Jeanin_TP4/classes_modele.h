@@ -76,7 +76,7 @@ class DiapoMdl {
 
 
     public:
-        DiapoMdl(const ImagesDansDiaporama& = ImagesDansDiaporama(), string="Diaporama par defaut",unsigned int=2, unsigned int=0); //constructeur par défaut
+        DiapoMdl(const ImagesDansDiaporama& = ImagesDansDiaporama(), string="Diaporama par defaut", unsigned int = 0, unsigned int=0); //constructeur par défaut
         DiapoMdl(const DiapoMdl&);// constructeur de copie
         ~DiapoMdl(); //destructeur
 
@@ -97,7 +97,7 @@ class DiapoMdl {
 
 
         //autres
-        void changerTitre(string);
+        void changerTitre(string); //inutile, on a déjà setTitre
 
         void chargerDiapo();
 

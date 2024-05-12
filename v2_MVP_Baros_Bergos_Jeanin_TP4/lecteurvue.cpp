@@ -95,7 +95,7 @@ void lecteurVue::demanderChangerModeDefilement()
 
 void lecteurVue::majInfosDiapo() {
     qDebug() << "J'essaie de changer le titre affiché";
-    ui->titre->setText(QString::fromStdString("nv titre"));
+    ui->titre->setText("nv titre");
 }
 
 void lecteurVue::majInfosImgDsDiapo(){
@@ -110,12 +110,14 @@ void lecteurVue::majInfosImgDsDiapo(){
 
 void lecteurVue::majMode(Mode d){
     if (d == Manuel){
+        string d = "Manuel";
         //qDebug() << "J'essaie de changer le mode affiché";
-        ui->mode->setText(QString::fromStdString("Manuel"));
+        ui->mode->setText(QString::fromStdString(d));
     }
     else{
+        string a = "Auto";
         //qDebug() << "J'essaie de changer le mode affiché";
-        ui->mode->setText(QString::fromStdString("Auto"));
+        ui->mode->setText(QString::fromStdString(a));
     }
 }
 
