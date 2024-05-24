@@ -31,32 +31,19 @@
        </widget>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,0,0">
+       <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,0,0">
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout_3">
-          <item>
-           <widget class="QLabel" name="image">
-            <property name="minimumSize">
-             <size>
-              <width>128</width>
-              <height>128</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>128</width>
-              <height>128</height>
-             </size>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-            <property name="pixmap">
-             <pixmap resource="cartesDisney.qrc">:/disney/cartesDisney/Disney_0.png</pixmap>
-            </property>
-           </widget>
-          </item>
-         </layout>
+         <widget class="QLabel" name="image">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="../cartesDisney/cartesDisney.qrc">:/cartesDisney/Disney_0.gif</pixmap>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
         </item>
         <item>
          <widget class="Line" name="line_4">
@@ -239,7 +226,7 @@
      <x>0</x>
      <y>0</y>
      <width>695</width>
-     <height>26</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFichier">
@@ -303,7 +290,7 @@
   </action>
  </widget>
  <resources>
-  <include location="cartesDisney.qrc"/>
+  <include location="../cartesDisney/cartesDisney.qrc"/>
  </resources>
  <connections/>
 </ui>
