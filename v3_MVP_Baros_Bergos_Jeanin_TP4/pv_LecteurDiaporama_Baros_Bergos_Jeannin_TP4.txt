@@ -1,0 +1,5 @@
+Présentation des caractéristiques de la version v2_MVP de l’application :
+
+Cette version du projet de lecteur de diaporama est un projet Qt graphique. Dans cette
+version, nous avons mis en place les classes presentation et modele (modèle MVP).
+Les fonctionnalités établies dans la v1 fonctionnent via les éléments d'interface pertinents.
