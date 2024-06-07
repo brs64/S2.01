@@ -102,7 +102,7 @@ void lecteurVue::demanderAProposDe()
 {
     qDebug() << "J'affiche la page 'à propos de' !";
     QString titre = "A propos";
-    QString message = "Version : V3 MVP\n\n"
+    QString message = "Version : V6 MVP\n\n"
                       "Date de création : 06/05/2024\n\n"
                       "Auteurs : BAROS Arthur, BERGOS Ugo, JEANNIN Guillem";
 

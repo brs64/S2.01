@@ -116,7 +116,7 @@ void Modele::triCroissantRang()
         {
             if (images[i]->getRangDansDiaporama() > images[i+1]->getRangDansDiaporama())
             {
-                // echanger les 2 éléments
+                // échanger les 2 éléments
                 pteurImage = images[i];
                 images[i] = images[i+1];
                 images[i+1] = pteurImage;
@@ -131,9 +131,6 @@ bool Modele::getManuel() const {
 void Modele::setManuel(bool etat)
 {
     _manuel = etat;
-}
-void Modele::departArretAuto() {
-    // Implémentation du départ/arrêt automatique
 }
 
 void Modele::changerVitesse() {

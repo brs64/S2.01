@@ -33,7 +33,6 @@ class Presentation : public QObject
 
         // Autres
         void demanderReculer();
-        void demanderDepartArretAuto();
         void demanderChangerVitesse();
         void demanderPause();
         void demanderChangerMode();

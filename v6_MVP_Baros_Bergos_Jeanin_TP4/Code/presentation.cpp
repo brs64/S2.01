@@ -109,11 +109,7 @@ void Presentation::demanderPause()
 {
     qDebug() << "la lecture est en pause !";
 }
-void Presentation::demanderDepartArretAuto()
-{
-    _leModele->departArretAuto();
-    qDebug() << "Le défilement d'image se met en pause / avance en mode auto";
-}
+
 
 void Presentation::demanderChangerVitesse()
 {
@@ -133,7 +129,7 @@ void Presentation::demanderChangerMode()
         getModele() -> setManuel(false);
         qDebug() << "auto";
         modeDef = "Auto";
-        timer->start(temps); // * getModele()->getVitesseDefilement()
+        timer->start(temps);
         qDebug() << "chrono lancé. actuellement à : " << timer;
         qDebug() << "chrono continue. actuellement à : " << timer;
     }
@@ -141,7 +137,7 @@ void Presentation::demanderChangerMode()
         getModele() -> setManuel(true);
         modeDef = "Manuel";
         timer->stop();  // Arrêter le timer lorsque le mode est changé en manuel.
-        disconnect(timer, SIGNAL(timeout()), this, SLOT(avancer())); //utile ?
+        disconnect(timer, SIGNAL(timeout()), this, SLOT(avancer()));
         }
     getVue()->afficherMode(modeDef);
 }
@@ -157,37 +153,6 @@ void Presentation::demanderFiltre()
 {
     qDebug() << "Affichage des filtres possibles";
 }
-
-/*
-void Presentation::avancerAuto()
-{
-    if (!_leModele) {
-        qDebug() << "_leModele est nul";
-        return;
-    }
-    if (!_laVue) {
-        qDebug() << "_laVue est nul";
-        return;
-    }
-
-    _leModele->avancer();
-
-    Diaporama *diapo = _leModele->getLecteur()->getDiaporama();
-    if (!diapo) {
-        qDebug() << "Diaporama est nul";
-        return;
-    }
-    ImageDansDiaporama* image = _leModele->getLecteur()->getImageCourante();
-    _laVue->majPresentation(
-        QString::fromStdString(diapo->getTitre()),
-        QString::fromStdString(image->getTitre()),
-        QString::fromStdString(image->getCategorie()),
-        QString::number(image->getRangDansDiaporama()),
-        QString::fromStdString(image->getChemin())
-        );
-    qDebug() << "L'image avance";
-}
-*/
 
 void Presentation::passerManuel(){
     if (!getModele()->getManuel()){

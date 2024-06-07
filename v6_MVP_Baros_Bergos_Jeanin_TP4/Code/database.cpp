@@ -15,10 +15,10 @@ database::database()
 bool database::openDataBase()
 {
     if (!bd.open()) {
-        qDebug() << "Connection échouée";
+        qDebug() << "Connexion échouée";
         return false;
     } else {
-        qDebug() << "Connection réussie";
+        qDebug() << "Connexion réussie";
         return true;
     }
 }

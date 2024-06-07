@@ -17,7 +17,7 @@ Lecteur::~Lecteur()
 
 unsigned int Lecteur::getIdDiaporama() const
 {
-    return idDiaporama; // valeur >= 0
+    return idDiaporama;
 }
 
 Diaporama* Lecteur::getDiaporama() const

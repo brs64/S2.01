@@ -97,8 +97,6 @@ void Diaporama::setImages(const ImagesDiaporama& pImages)
 void Diaporama::ajouterImageEnFin(ImageDansDiaporama* pImage)
 {
     images.push_back(pImage);
-
-    // post-condition : nbImages() > 0
 }
 
 void Diaporama::enleverImageEnFin()
@@ -107,8 +105,6 @@ void Diaporama::enleverImageEnFin()
     {
         images.pop_back();
     }
-
-    // post-condition : nbImages() >= 0
 }
 
 void Diaporama::vider()
@@ -116,11 +112,8 @@ void Diaporama::vider()
     unsigned int taille = nbImages();
     for (unsigned int i = 0; i < taille ; i++)
     {
-        enleverImageEnFin(); /* Removes the last element in the vector,
-                              effectively reducing the container size by one.
-                              AND deletes the removed element */
+        enleverImageEnFin();
     }
-    // post-condition : nbImages() == 0
 }
 
 void Diaporama::charger()
@@ -138,7 +131,6 @@ void Diaporama::charger()
                           "WHERE D.idDiaporama = :diaporamaId "
                           "ORDER BY DDD.rang;");
         query.prepare(requete);
-        // Bind the external parameter value to the placeholder
         query.bindValue(":diaporamaId", id);
 
         if (query.exec()) {
@@ -174,7 +166,7 @@ void Diaporama::trierParRangCroissant()
         {
             if (images[i]->getRangDansDiaporama() > images[i+1]->getRangDansDiaporama())
             {
-                // echanger les 2 éléments
+                // échanger les 2 éléments
                 pteurImage = images[i];
                 images[i] = images[i+1];
                 images[i+1] = pteurImage;

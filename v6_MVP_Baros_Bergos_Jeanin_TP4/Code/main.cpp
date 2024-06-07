@@ -6,6 +6,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
+    unsigned int nDiapo = 1;
     //créer le lecteur
     Lecteur* l = new Lecteur();
 
@@ -26,12 +27,12 @@ int main(int argc, char *argv[])
     w.setPresentation(p);
 
     // charger le Diaporama
-    l->changerDiaporama(1);
+    l->changerDiaporama(nDiapo);
 
     // faire pointer le modèle vers le lecteur
     m->setLecteur(l);
-    // afficher la vue et démarrer la boucle d'attente des messages
 
+    // afficher la vue et démarrer la boucle d'attente des messages
     w.show();
     return a.exec();
 }
